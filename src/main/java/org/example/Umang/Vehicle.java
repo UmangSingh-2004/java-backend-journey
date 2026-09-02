@@ -27,7 +27,7 @@ class Buyer{
        fleet[1] = new Bike();
        fleet[2] = new Bike();
        for (Vehicle v : fleet){
-           v.start();
+           System.out.println(v.start());
        }
     }
 }

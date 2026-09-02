@@ -24,8 +24,13 @@ public class BankAccount {
         this.accountNumber=accountNumber;
     }
 
-    public int withdraw(int amount ){
-        return balance - amount;
+    public int withdraw(int amount) {
+        if (amount > balance) {
+            System.out.println("Insufficient funds!");
+            return balance;
+        }
+        balance -= amount;
+        return balance;
     }
 }
 class User{
